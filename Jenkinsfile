@@ -27,7 +27,7 @@ pipeline {
 
                 sh """
 
-                docker run -p 3000:3000 osamamagdy/sprints_jenkins:latest
+                docker run -d -p 3000:3000 osamamagdy/sprints_jenkins:latest
                 
                 """
 

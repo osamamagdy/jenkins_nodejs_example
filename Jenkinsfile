@@ -5,6 +5,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/osamamagdy/jenkins_nodejs_example.git'
+                sh 'git checkout ci/cd'
             }
         }
         stage('Build') {

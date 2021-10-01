@@ -36,7 +36,7 @@ pipeline {
             }
              post {
                  success {
-                     slackSend (color:#00FF00, message: summary)
+                     slackSend (color:"#00FF00", message: "summary")
                  }
            }
         }
